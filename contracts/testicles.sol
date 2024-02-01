@@ -1,11 +1,10 @@
-// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
 import {ERC20} from "@openzeppelin/contracts@5.0.1/token/ERC20/ERC20.sol";
 import {Ownable} from "./Ownable.sol"; // This is scraped form openzepplin with renounceOwnership function disabled.
 import {ERC20Permit} from "@openzeppelin/contracts@5.0.1/token/ERC20/extensions/ERC20Permit.sol";
 
-contract MyToken is ERC20, Ownable, ERC20Permit {
+contract EmissionUnitToken is ERC20, Ownable, ERC20Permit {
     constructor(
         address initialOwner
     )
